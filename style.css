@@ -1,0 +1,17 @@
+body{
+    color: whitesmoke;
+    background-image: linear-gradient(to bottom right,purple,darkblue,lightblue,lightgreen,yellow,darkorange,red,red,darkorange,yellow,lightgreen,lightblue,darkblue,purple);
+}
+.head{
+    width: 80%;
+    font-size: 22px;
+    color: #000000;
+}
+.noo,#objn,#obja{
+    color: teal;
+}
+#cam{
+    border: 2px dashed #000000 ;
+    width: 350px;
+    height: 300px;
+}

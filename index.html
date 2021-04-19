@@ -1,0 +1,49 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="btn btn-default head"></h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <b class="noo"><hr class="col-lg-4"><h3 class="col-lg-4 text-capitalize">rubix cube</h3><hr class="col-lg-4"></b>
+      <b class="noo"><hr class="col-lg-4"><h3 class="col-lg-4 text-capitalize">tedybear</h3><hr class="col-lg-4"></b>
+      <b class="noo"><hr class="col-lg-4"><h3 class="col-lg-4 text-capitalize">face without mask</h3><hr class="col-lg-4"></b>
+      <b class="noo"><hr class="col-lg-4"><h3 class="col-lg-4 text-capitalize">face with mask</h3><hr class="col-lg-4"></b>
+      <br><hr><br>
+      <label>Webcam View - </label>
+      <div id="cam"></div>
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+      <button type="button" onclick="snap();" class="btn btn-info">Capture Image</button>
+      <br><br>
+      <button type="button" onclick="checkthat();" class="btn btn-success">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object :  <span id="objn"></span></p>
+      <p style="font-size: 22px;">Accuracy :  <span id="obja"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
