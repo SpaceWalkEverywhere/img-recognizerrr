@@ -12,3 +12,7 @@ function snap(){
   });
 }
 console.log(ml5.version);
+clasifier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/5QbOxZhb7/model.json',modell);
+function modell(){
+console.log("model loaded!!!");
+}
