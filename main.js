@@ -11,3 +11,4 @@ function snap(){
   document.getElementById("result").innerHTML='<img src="'+data_uri+'" id="res" class="img-responsive">';
   });
 }
+console.log(ml5.version);
