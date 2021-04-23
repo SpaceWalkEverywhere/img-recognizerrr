@@ -11,7 +11,9 @@ function snap(){
   document.getElementById("result").innerHTML='<img src="'+data_uri+'" id="res" class="img-responsive">';
   });
   document.getElementById("ct").style.display="flex";
+  document.getElementById("result").style.display="flex";
   document.getElementById("sn").style.display="none";
+  document.getElementById("camera").style.display="none";
 }
 console.log(ml5.version);
 classifier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/5QbOxZhb7/model.json',modell);
@@ -20,6 +22,8 @@ console.log("model loaded!!!");
 }
 function checkthat(){
   document.getElementById("sn").style.display="flex";
+  document.getElementById("camera").style.display="flex";
+  document.getElementById("result").style.display="none";
   document.getElementById("ct").style.display="none";
   img=document.getElementById("res");
   classifier.classify(img,classified);
